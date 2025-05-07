@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <VerticalStackLayout>
+        <Button VerticalOptions="Center" x:Name="flashcard" Text="Fiszka" TextColor="Black" BorderWidth="1"  BackgroundColor="LightGray"></Button>
+
+
+        <HorizontalStackLayout VerticalOptions="Center">
+
+            <Button  WidthRequest="150" HeightRequest="30" Text="...Previous"  Clicked="Previous_Clicked" BorderWidth="1" BorderColor="Black" BackgroundColor="LightGray" ></Button>
+
+
+            <Button  WidthRequest="150" HeightRequest="30" Text="Reverse" Clicked="reverse_Clicked" BorderWidth="1" BorderColor="Black" TextColor="Black" BackgroundColor="LightGray"></Button>
+
+         <Button  WidthRequest="150" HeightRequest="30" Text="Next..."  Clicked="Next_Clicked" BorderWidth="1" BorderColor="Black" BackgroundColor="LightGray" ></Button>
+      
+        </HorizontalStackLayout>
+
+
+
+
+        <Button x:Name="points" Clicked="points_Clicked" WidthRequest="100" HeightRequest="20"  TextColor="Black" BorderWidth="1" BorderColor="Grey" BackgroundColor="LightGray" Text="Points: 0"></Button>
+</VerticalStackLayout>
+</ContentPage>
